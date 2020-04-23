@@ -1,0 +1,161 @@
+:root {
+    --color-noir: #000000;
+    --color-gris_souris: #818181;
+    --color-gris_clair: #D6D6D6;
+    --color-blanc: #ffffff;
+    --color-violet: #32083B;
+    --color-lavande: #765D7E;
+    --color-parme: #D093A9;
+    --color-rose: #F594A0;
+    --color-bleu_vert: #3D5560;
+    --color-bleu_canard: #466B7B;
+    --color-bleu: #6C9EB4;
+    --color-bleu_ciel: #E4FBFE;
+    --color-vert: #0BB38B;
+    --color-vert_menthe: #C2ECE2;
+
+    --font-family-sourcesanspro: 'Source Sans Pro', sans-serif;
+    --font-family-ubuntu: 'Ubuntu', sans-serif;
+    --font-size-40: 40px;
+    --font-size-30: 30px;
+    --font-size-36: 36px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+    --font-style-normal: normal;
+    --font-style-medium: medium;
+    --font-style-bold: bold;
+}
+
+h1 {
+    font-family: var(--font-family-sourcesanspro);
+    font-size: var(--font-size-40);
+    font-style: var(--font-style-normal);
+}
+
+h2 {
+    font-style: var(--color-noir);
+    font-family: var(--font-family-sourcesanspro);
+    font-size: var(--font-size-30);
+    font-style: var(--font-style-bold);
+}
+
+h3 {
+    font-family: var(--font-family-sourcesanspro);
+    font-size: var(--font-size-30);
+    font-style: var(--font-style-bold);
+    padding-top: 12px;
+    padding-bottom: 6px;
+
+}
+
+.dimensions {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    float: left;
+}
+
+.noir {
+    background-color: var(--color-noir);
+}
+
+.gris_souris {
+    background-color: var(--color-gris_souris);
+}
+
+.gris_clair {
+    background-color: var(--color-gris_clair);
+}
+
+.blanc {
+    background-color: var(--color-blanc);
+    border: 0.2px solid var(--color-noir)
+}
+
+.violet {
+    background-color: var(--color-violet);
+}
+
+.lavande {
+    background-color: var(--color-lavande);
+}
+
+.parme {
+    background-color: var(--color-parme);
+}
+
+.rose {
+    background-color: var(--color-rose);
+}
+
+.bleu_vert {
+    background-color: var(--color-bleu_vert);
+}
+
+.bleu_canard {
+    background-color: var(--color-bleu_canard);
+}
+
+.bleu {
+    background-color: var(--color-bleu);
+}
+
+.bleu_ciel {
+    background-color: var(--color-bleu_ciel);
+}
+
+.vert {
+    background-color: var(--color-vert);
+}
+
+.vert_menthe {
+    background-color: var(--color-vert_menthe);
+}
+
+/* .shadow { */
+    /* box-shadow: var(--); À FAIRE */
+/* } */
+
+p {
+    margin: auto;
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+
+.h1 {
+    font-family: var(--font-family-ubuntu);
+    font-style: var(--font-style-normal);
+    font-size: var(--font-size-36);
+    color: var(--color-violet);
+}
+
+.h2 {
+    font-family: var(--font-family-ubuntu);
+    font-style: var(--font-style-medium);
+    font-size: var(--font-size-36);
+}
+
+.sous_titre1 {
+    font-family: var(--font-family-sourcesanspro);
+    font-style: var(--font-style-bold);
+    font-size: var(--font-size-16);
+}
+
+.sous_titre2 {
+    font-family: var(--font-family-sourcesanspro);
+    font-style: var(--font-style-bold);
+    color: var(--font-size-14);
+}
+
+.texte_courant {
+    font-family: var(--font-family-sourcesanspro);
+    font-style: var(--font-style-normal);
+    font-size: var(--font-size-16);
+}
+
+.texte_complémentaire {
+    font-family: var(--font-family-sourcesanspro);
+    font-style: var(--font-style-normal);
+    font-size: var(--font-size-14);
+}
