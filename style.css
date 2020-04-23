@@ -1,4 +1,7 @@
 :root {
+
+
+    /*--COLORS--*/
     --color-noir: #000000;
     --color-gris_souris: #818181;
     --color-gris_clair: #D6D6D6;
@@ -13,7 +16,16 @@
     --color-bleu_ciel: #E4FBFE;
     --color-vert: #0BB38B;
     --color-vert_menthe: #C2ECE2;
+    --color-vert-sapin: #219653;
 
+    --color-shadow-negatif:245,148,160;
+    --color-shadow-positif:11,179,139;
+    --color-shadow-secondary:50,8,59;
+    --color-shadow-disable:0,0,0;
+
+    
+
+    /*--FONT--*/
     --font-family-sourcesanspro: 'Source Sans Pro', sans-serif;
     --font-family-ubuntu: 'Ubuntu', sans-serif;
     --font-size-40: 40px;
@@ -21,9 +33,22 @@
     --font-size-36: 36px;
     --font-size-16: 16px;
     --font-size-14: 14px;
-    --font-style-normal: normal;
-    --font-style-medium: medium;
-    --font-style-bold: bold;
+    --font-style-normal: 400;
+    --font-style-medium: 600;
+    --font-style-bold: 700;
+    
+    
+    /*--SPACES--*/
+    --space-xs:8px;
+    --space-sm:16px;
+    --space-md:32px;
+
+    /*--PADDING--*/
+    --paddingbouton: 16px 8px 16px 8px; 
+
+    /*--BORDER--*/
+    --border-radius-bouton: 47px;
+
 }
 
 h1 {
@@ -53,7 +78,14 @@ h3 {
     width: 3rem;
     border-radius: 50%;
     margin-right: 0.5rem;
-    float: left;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.block{
+    display: block;
 }
 
 .noir {
@@ -70,7 +102,6 @@ h3 {
 
 .blanc {
     background-color: var(--color-blanc);
-    border: 0.2px solid var(--color-noir)
 }
 
 .violet {
@@ -113,9 +144,23 @@ h3 {
     background-color: var(--color-vert_menthe);
 }
 
-/* .shadow { */
-    /* box-shadow: var(--); À FAIRE */
-/* } */
+.shadow-negatif { 
+    box-shadow:0px 6px 8px rgba(var(--color-shadow-negatif),0.5);
+ } 
+
+.shadow-primaire { 
+    box-shadow:0px 6px 8px rgba(var(--color-shadow-positif),0.5);
+}
+.shadow-secondary { 
+    box-shadow:0px 6px 8px rgba(var(--color-shadow-secondary),0.5);
+}
+.shadow-disable { 
+    box-shadow:0px 6px 8px rgba(var(--color-shadow-disable),0.5);
+}
+.border-grey{
+    
+    border: 1px solid var(--color-gris_clair);
+}
 
 p {
     margin: auto;
@@ -125,49 +170,58 @@ p {
 
 .h1 {
     font-family: var(--font-family-ubuntu);
-    font-style: var(--font-style-normal);
+    font-weight: var(--font-style-normal);
     font-size: var(--font-size-36);
     color: var(--color-violet);
 }
 
 .h2 {
     font-family: var(--font-family-ubuntu);
-    font-style: var(--font-style-medium);
+    font-weight: var(--font-style-medium);
     font-size: var(--font-size-36);
 }
 
 .sous_titre1 {
     font-family: var(--font-family-sourcesanspro);
-    font-style: var(--font-style-bold);
+    font-weight: var(--font-style-bold);
     font-size: var(--font-size-16);
 }
 
 .sous_titre2 {
     font-family: var(--font-family-sourcesanspro);
-    font-style: var(--font-style-bold);
+    font-weight: var(--font-style-bold);
     color: var(--font-size-14);
 }
 
 .texte_courant {
     font-family: var(--font-family-sourcesanspro);
-    font-style: var(--font-style-normal);
+    font-weight: var(--font-style-normal);
     font-size: var(--font-size-16);
 }
 
 .texte_complémentaire {
     font-family: var(--font-family-sourcesanspro);
-    font-style: var(--font-style-normal);
+    font-weight: var(--font-style-normal);
     font-size: var(--font-size-14);
 }
 .btn {
     background-color: var(--color-vert);
     color: var(--color-blanc);
+    padding: var(--paddingbouton);
+    border-radius: var(--border-radius-bouton);
 }
+
+.btn:default {
+    box-shadow: var(--color-shadow-positif);
+}
+
 .btn:hover {
-    background-color: var(--color-vert);
+    background-color: var(--color-vert-sapin);
+    box-shadow: var(--color-shadow-positif);
 }
+
 .btn:active {
-    background-color: var(--color-green);
+    background-color: var(--color-vert-sapin);
 }
 
 .btn:disabled{
