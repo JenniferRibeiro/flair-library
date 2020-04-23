@@ -159,3 +159,13 @@ p {
     font-style: var(--font-style-normal);
     font-size: var(--font-size-14);
 }
+.btn {
+    background-color: var(--color-vert);
+    color: var(--color-blanc);
+}
+.btn:hover {
+    background-color: var(--color-vert);
+}
+.btn:active {
+    background-color: var(--color-green);
+}
