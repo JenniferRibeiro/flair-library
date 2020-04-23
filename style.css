@@ -141,6 +141,9 @@ h3 {
     background-color: var(--color-vert_menthe);
 }
 
+
+
+
 .shadow-negatif { 
     box-shadow:0px 6px 8px rgba(var(--color-shadow-negatif),0.5);
  } 
@@ -154,6 +157,9 @@ h3 {
 .shadow-disable { 
     box-shadow:0px 6px 8px rgba(var(--color-shadow-disable),0.5);
 }
+
+
+
 .border-grey{
     
     border: 1px solid var(--color-gris_clair);
