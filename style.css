@@ -1,6 +1,5 @@
 :root {
 
-
     /*--COLORS--*/
     --color-noir: #000000;
     --color-gris_souris: #818181;
@@ -22,7 +21,6 @@
     --color-shadow-positif:11,179,139;
     --color-shadow-secondary:50,8,59;
     --color-shadow-disable:0,0,0;
-
     
 
     /*--FONT--*/
@@ -36,7 +34,6 @@
     --font-style-normal: 400;
     --font-style-medium: 600;
     --font-style-bold: 700;
-    
     
     /*--SPACES--*/
     --space-xs:8px;
