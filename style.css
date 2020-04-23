@@ -169,3 +169,7 @@ p {
 .btn:active {
     background-color: var(--color-green);
 }
+
+.btn:disabled{
+    background-color: var(--color-gris_souris);
+}
