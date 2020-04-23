@@ -13,7 +13,8 @@
     --color-bleu_ciel: #E4FBFE;
     --color-vert: #0BB38B;
     --color-vert_menthe: #C2ECE2;
-
+    
+    /*--FONT--*/
     --font-family-sourcesanspro: 'Source Sans Pro', sans-serif;
     --font-family-ubuntu: 'Ubuntu', sans-serif;
     --font-size-40: 40px;
@@ -24,6 +25,10 @@
     --font-style-normal: normal;
     --font-style-medium: medium;
     --font-style-bold: bold;
+    
+    
+    /*--PADDING--*/
+    --space-p-sm
 }
 
 h1 {
@@ -53,7 +58,9 @@ h3 {
     width: 3rem;
     border-radius: 50%;
     margin-right: 0.5rem;
-    float: left;
+}
+.elemt-inline{
+    display: inline-block;
 }
 
 .noir {
