@@ -16,6 +16,9 @@
     --color-vert: #0BB38B;
     --color-vert_menthe: #C2ECE2;
     --color-vert-sapin: #219653;
+    --color-pourpre: #9B51E0;
+    --color-rouge: #EB5757;
+    --color-bleu-lien: #2D9CDB;
 
     --color-shadow-negatif:245,148,160;
     --color-shadow-positif:11,179,139;
@@ -41,7 +44,7 @@
     --space-md:32px;
 
     /*--PADDING--*/
-    --paddingbouton: 16px 8px 16px 8px; 
+    --paddingbouton: 8px 16px 8px 16px; 
 
     /*--BORDER--*/
     --border-radius-bouton: 47px;
@@ -70,12 +73,15 @@ h3 {
 
 }
 
-.dimensions {
+.size {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
     margin-right: 0.5rem;
 }
+
+
+/* Block & inline*/
 
 .inline{
     display: inline-block;
@@ -85,6 +91,9 @@ h3 {
     display: block;
 }
 
+
+
+/*---------------------------------------COLORS-----------------------------*/
 .noir {
     background-color: var(--color-noir);
 }
@@ -142,7 +151,11 @@ h3 {
 }
 
 
+<<<<<<< HEAD
 
+=======
+/*------------------------SHADOW------------------------------*/
+>>>>>>> 04d8187b848434f659a5ea2ec577792eb7591cea
 
 .shadow-negatif { 
     box-shadow:0px 6px 8px rgba(var(--color-shadow-negatif),0.5);
@@ -171,6 +184,7 @@ p {
     padding-top: 0px;
 }
 
+/*------------------------Titre et Texte------------------------------*/
 .h1 {
     font-family: var(--font-family-ubuntu);
     font-weight: var(--font-style-normal);
@@ -207,26 +221,91 @@ p {
     font-weight: var(--font-style-normal);
     font-size: var(--font-size-14);
 }
-.btn {
+
+
+/*------------------------ Bouton ------------------------------*/
+
+/*------- Primaire -----------*/
+.btn-primary {
     background-color: var(--color-vert);
     color: var(--color-blanc);
     padding: var(--paddingbouton);
     border-radius: var(--border-radius-bouton);
+    box-shadow:0px 6px 8px rgba(var(--color-shadow-positif),0.5);
 }
 
-.btn:default {
-    box-shadow: var(--color-shadow-positif);
-}
-
-.btn:hover {
+.btn-primary:hover {
     background-color: var(--color-vert-sapin);
-    box-shadow: var(--color-shadow-positif);
 }
 
-.btn:active {
+.btn-primary:active {
     background-color: var(--color-vert-sapin);
+}
+
+/*------- Secondaire -----------*/
+.btn-secondary {
+    background-color: var(--color-violet);
+    color: var(--color-blanc);
+    padding: var(--paddingbouton);
+    border-radius: var(--border-radius-bouton);
+    box-shadow:0px 6px 8px rgba(var(--color-shadow-secondary),0.5);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-pourpre);
+}
+
+.btn-secondary:active {
+    background-color: var(--color-violet);
+}
+
+/*------- Negatif -----------*/
+.btn-negatif {
+    border: 1px solid var(--color-rouge);
+    color: var(--color-rouge);
+    padding: var(--paddingbouton);
+    border-radius: var(--border-radius-bouton);
+    box-shadow:0px 6px 8px rgba(var(--color-shadow-negatif),0.5);
+}
+
+.btn-negatif:hover {
+    background-color: var(--color-rouge);
+    color: var(--color-blanc);
+}
+
+.btn-negatif:active {
+    color: var(--color-blanc);
+    background-color: var(--color-rose);
+    border: 1px solid var(--color-rose);
+}
+
+
+/*------- Liens -----------*/
+.btn-link {
+    color: var(--color-bleu);
+    padding: var(--paddingbouton);
+    border-radius: var(--border-radius-bouton);
+    border: 1px solid var(--color-bleu-lien);
+}
+.btn-link:hover{
+    background-color: var(--color-bleu);
+    color:var(--color-blanc);
+}
+
+/*------- Liens négatif -----------*/
+.btn-link-negatif {
+    color: var(--color-rose);
+    padding: var(--paddingbouton);
+    border-radius: var(--border-radius-bouton);
+    border: 1px solid var(--color-rouge);
+}
+.btn-link-negatif:hover{
+    color:var(--color-blanc);
+    background-color:var(--color-rouge);
 }
 
 .btn:disabled{
-    background-color: var(--color-gris_souris);
+    color:var(--color-blanc);
+    background-color:var(--color-gris_souris);
 }
+
