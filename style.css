@@ -26,7 +26,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    padding: 40px;
 }
 ol, ul {
 	list-style: none;
@@ -197,11 +198,6 @@ h3 {
 }
 
 
-<<<<<<< HEAD
-
-=======
-/*------------------------SHADOW------------------------------*/
->>>>>>> 04d8187b848434f659a5ea2ec577792eb7591cea
 
 .shadow-negatif { 
     box-shadow:0px 6px 8px rgba(var(--color-shadow-negatif),0.5);
@@ -270,7 +266,9 @@ p {
 
 
 /*------------------------ Bouton ------------------------------*/
-
+.btn{
+    margin: 15px;
+}
 /*------- Primaire -----------*/
 .btn-primary {
     background-color: var(--color-vert);
@@ -354,4 +352,95 @@ p {
     color:var(--color-blanc);
     background-color:var(--color-gris_souris);
     box-shadow:0px 6px 8px rgba(var(--color-shadow-disable),0.5);
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  font-family: var(--font-family-ubuntu);
+  font-weight: var(--font-style-medium);
+  font-size: var(--font-size-18);
+  color:var(--color-violet);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
 }
