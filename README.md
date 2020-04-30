@@ -7,7 +7,7 @@
 <li>organismes</li>
 <li>composants</li></ul>
 
-<ul>Coder une partie du design system de Flair sur VS code :
+<ul>Coder une partie de ce design system sur Visual Studio code :
 <li>atomes</li>
 <li>molécules</li>
 <li>un organisme</li></ul>
