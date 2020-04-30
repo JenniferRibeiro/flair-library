@@ -94,6 +94,7 @@ button{
     --font-size-40: 40px;
     --font-size-30: 30px;
     --font-size-36: 36px;
+    --font-size-18: 18px;
     --font-size-16: 16px;
     --font-size-14: 14px;
     --font-style-normal: 400;
@@ -112,6 +113,16 @@ button{
     --border-radius-bouton: 47px;
 
 }
+.p-16-tb{
+    padding: 16px 0;
+}
+.p-20-tb{
+    padding: 20px 0;
+}
+.p-40-tb{
+    padding: 40px 0;
+}
+
 main{
     padding: 80px;
     width: 60%;
@@ -266,15 +277,20 @@ section{
 /*------------------------Titre et Texte------------------------------*/
 .h1 {
     font-family: var(--font-family-ubuntu);
-    font-weight: var(--font-style-normal);
-    font-size: var(--font-size-36);
-    color: var(--color-violet);
+    font-weight: var(--font-style-medium);
+    font-size: var(--font-size-40);
 }
 
 .h2 {
     font-family: var(--font-family-ubuntu);
-    font-weight: var(--font-style-medium);
+    font-weight: var(--font-style-normal);
     font-size: var(--font-size-36);
+    color: var(--color-violet);
+}
+.h3{
+    font-weight: var(--font-style-normal);
+    font-size: var(--font-size-18);
+    color: var(--color-violet);
 }
 
 .sous_titre1 {
