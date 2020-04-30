@@ -70,17 +70,18 @@ button{
     --color-violet: #32083B;
     --color-lavande: #765D7E;
     --color-parme: #D093A9;
+    --color-pourpre: #9B51E0;
+    --color-rouge: #EB5757;
     --color-rose: #F594A0;
     --color-bleu_vert: #3D5560;
     --color-bleu_canard: #466B7B;
     --color-bleu: #6C9EB4;
     --color-bleu_ciel: #E4FBFE;
+    --color-bleu_lien: #2D9CDB;
     --color-vert: #0BB38B;
     --color-vert_menthe: #C2ECE2;
-    --color-vert-sapin: #219653;
-    --color-pourpre: #9B51E0;
-    --color-rouge: #EB5757;
-    --color-bleu-lien: #2D9CDB;
+    --color-vert_sapin: #219653;
+
 
     --color-shadow-negatif:245,148,160;
     --color-shadow-positif:11,179,139;
@@ -215,6 +216,14 @@ h3 {
     background-color: var(--color-parme);
 }
 
+.pourpre {
+    background-color: var(--color-pourpre);
+}
+
+.rouge {
+    background-color: var(--color-rouge);
+}
+
 .rose {
     background-color: var(--color-rose);
 }
@@ -235,12 +244,20 @@ h3 {
     background-color: var(--color-bleu_ciel);
 }
 
+.bleu_lien {
+    background-color: var(--color-bleu_lien);
+}
+
 .vert {
     background-color: var(--color-vert);
 }
 
 .vert_menthe {
     background-color: var(--color-vert_menthe);
+}
+
+.vert_sapin {
+    background-color: var(--color-vert_sapin);
 }
 
 
@@ -332,11 +349,11 @@ section{
 }
 
 .btn-primary:hover {
-    background-color: var(--color-vert-sapin);
+    background-color: var(--color-vert_sapin);
 }
 
 .btn-primary:active {
-    background-color: var(--color-vert-sapin);
+    background-color: var(--color-vert_sapin);
 }
 
 /*------- Secondaire -----------*/
@@ -384,7 +401,7 @@ section{
     background-color: var(--color-blanc);
     padding: var(--paddingbouton);
     border-radius: var(--border-radius-bouton);
-    border: 1px solid var(--color-bleu-lien);
+    border: 1px solid var(--color-bleu_lien);
 }
 .btn-link:hover{
     background-color: var(--color-bleu);
