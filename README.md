@@ -1,17 +1,16 @@
 # flair-library
 
 <h1>Objectif :</h1>
-<ul>Créer le design system de Flair sur Figma :</ul>
+<ul>Créer le design system de Flair sur Figma :
 <li>atomes</li>
 <li>molécules</li>
 <li>organismes</li>
-<li>composants</li>
+<li>composants</li></ul>
 
-<ul>Coder une partie du design system de Flair sur VS code :</ul>
+<ul>Coder une partie de ce design system sur Visual Studio code :
 <li>atomes</li>
 <li>molécules</li>
-<li>un organisme</li>
-
+<li>un organisme</li></ul>
 
 <h1>Concept de l’application :</h1>
 <p>Flair est une application qui permet de retrouver ses ami.e.s lors d’événements ponctuels.</p>
@@ -33,5 +32,5 @@ vers le clavier du téléphone)</ol>
 <ol>- choisir un thème et un visuel en fonction de la nature de l’événement</ol></ul>
 
 <h2>Collaborateurs :</h2>
-<li>Alexis René</li>
-<li>Jennifer Ribeiro</li>
+<ul><li>Alexis René</li>
+<li>Jennifer Ribeiro</li></ul>
