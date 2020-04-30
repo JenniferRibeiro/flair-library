@@ -113,14 +113,32 @@ button{
     --border-radius-bouton: 47px;
 
 }
+.p-10-rl{
+    padding: 0 10px;
+}
+.p-30-rl{
+    padding: 0 30px;
+}
+.p-8-tb{
+    padding: 8px 0;
+}
+.p-10-tb{
+    padding: 10px 0;
+}
 .p-16-tb{
     padding: 16px 0;
 }
 .p-20-tb{
     padding: 20px 0;
 }
+.p-30-tb{
+    padding: 30px 0;
+}
 .p-40-tb{
     padding: 40px 0;
+}
+.w-100{
+    width: 100px;
 }
 
 main{
@@ -285,7 +303,7 @@ section{
     font-family: var(--font-family-ubuntu);
     font-weight: var(--font-style-normal);
     font-size: var(--font-size-36);
-    color: var(--color-violet);
+    color: var(--color-lavande);
 }
 .h3{
     font-weight: var(--font-style-normal);
@@ -293,29 +311,38 @@ section{
     color: var(--color-violet);
 }
 
-.sous_titre1 {
+.sous_titre16 {
     font-family: var(--font-family-sourcesanspro);
     font-weight: var(--font-style-bold);
     font-size: var(--font-size-16);
+    color: var(--color-gris_souris);
 }
 
-.sous_titre2 {
+.sous_titre14 {
     font-family: var(--font-family-sourcesanspro);
     font-weight: var(--font-style-bold);
-    color: var(--font-size-14);
+    font-size: var(--font-size-14);
+    color: var(--color-gris_souris);
 }
 
 .texte_courant {
     font-family: var(--font-family-sourcesanspro);
     font-weight: var(--font-style-normal);
     font-size: var(--font-size-16);
+    color: var(--color-gris_souris);
 }
 
 .texte_complémentaire {
     font-family: var(--font-family-sourcesanspro);
     font-weight: var(--font-style-normal);
     font-size: var(--font-size-14);
+    color: var(--color-gris_souris);
 }
+
+.titre-section{
+    font-size: 60px;
+}
+
 
 
 /*------------------------ Bouton ------------------------------*/
