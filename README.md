@@ -1,13 +1,13 @@
 # flair-library
 
-Objectif : 
+<b>Objectif :</b>
 Créer le [une partie du] design system de Flair :
 - atomes
 - molécules
 - composants
 - organismes
 
-Concept de l’application :
+<b>Concept de l’application :</b>
 Flair est une application qui permet de retrouver ses ami.e.s lors d’événements ponctuels. 
 
 Elle propose les fonctionnalités suivantes :
@@ -26,6 +26,6 @@ vers le clavier du téléphone)
 - définir un lieu de rdv où se retrouver
 - choisir un thème et un visuel en fonction de la nature de l’événement
 
-Collaborateurs : 
+<b>Collaborateurs :</b>
 - Alexis René
 - Jennifer Ribeiro
