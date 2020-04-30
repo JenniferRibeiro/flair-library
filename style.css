@@ -70,9 +70,9 @@ button{
     --color-violet: #32083B;
     --color-lavande: #765D7E;
     --color-parme: #D093A9;
+    --color-rose: #F594A0;
     --color-pourpre: #9B51E0;
     --color-rouge: #EB5757;
-    --color-rose: #F594A0;
     --color-bleu_vert: #3D5560;
     --color-bleu_canard: #466B7B;
     --color-bleu: #6C9EB4;
@@ -112,7 +112,6 @@ button{
 
     /*--BORDER--*/
     --border-radius-bouton: 47px;
-
 }
 .p-16-tb{
     padding: 16px 0;
@@ -185,7 +184,17 @@ h3 {
     display: block;
 }
 
+.box-2cols {
+    display: flex;
+}
 
+.box-2cols ul {
+    width: 50%;
+}
+
+.box-2cols li {
+    margin-bottom: 20px;
+}
 
 /*---------------------------------------COLORS-----------------------------*/
 .noir {
