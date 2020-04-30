@@ -1,16 +1,16 @@
 # flair-library
 
 <b>Objectif :</b>
-Créer le [une partie du] design system de Flair :
-- atomes
-- molécules
-- composants
-- organismes
+<p>Créer le [une partie du] design system de Flair :</p>
+<li>- atomes</li>
+<li>- molécules</li>
+<li>- composants</li>
+<li>- organismes</li>
 
 <b>Concept de l’application :</b>
-Flair est une application qui permet de retrouver ses ami.e.s lors d’événements ponctuels. 
+<p>Flair est une application qui permet de retrouver ses ami.e.s lors d’événements ponctuels.</p>
 
-Elle propose les fonctionnalités suivantes :
+<p>Elle propose les fonctionnalités suivantes :</p>
 *  contacter un.e ami.e ou groupe d’ami.e.s (via le système de géolocalisation) :
 - messages à une personne ou un groupe (intégré à l’application), appels et visio (renvoi
 vers le clavier du téléphone)
