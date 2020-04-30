@@ -1,20 +1,26 @@
 # flair-library
 
 <h1>Objectif :</h1>
-<ul>Créer le [une partie du] design system de Flair :</ul>
+<ul>Créer le design system de Flair sur Figma :</ul>
 <li>atomes</li>
 <li>molécules</li>
-<li>composants</li>
 <li>organismes</li>
+<li>composants</li>
+
+<ul>Coder une partie du design system de Flair sur VS code :</ul>
+<li>atomes</li>
+<li>molécules</li>
+<li>un organisme</li>
+
 
 <h1>Concept de l’application :</h1>
 <p>Flair est une application qui permet de retrouver ses ami.e.s lors d’événements ponctuels.</p>
 
 <ul>Elle propose les fonctionnalités suivantes :</ul>
 <li>contacter un.e ami.e ou groupe d’ami.e.s (via le système de géolocalisation) :</li>
-<p>- messages à une personne ou un groupe (intégré à l’application), appels et visio (renvoi
-vers le clavier du téléphone)</p>
-<p>- fonction alerte : notification en cas de problème et besoin d’être rejoint rapidement</p>
+<ol>- messages à une personne ou un groupe (intégré à l’application), appels et visio (renvoi
+vers le clavier du téléphone)</ol>
+<ol>- fonction alerte : notification en cas de problème et besoin d’être rejoint rapidement</ol>
 
 <li>ajout de contacts :</li>
 <p>- synchronisation de sa liste de contacts mobile</p>
