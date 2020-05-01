@@ -99,6 +99,7 @@ button{
     --font-size-16: 16px;
     --font-size-14: 14px;
     --font-style-normal: 400;
+    --font-style-semimedium: 500;
     --font-style-medium: 600;
     --font-style-bold: 700;
     
@@ -149,17 +150,44 @@ main{
 }
 nav{
     width: 12%;
-    padding: 40px;
+    padding: 20px 40px;
 }
 nav ul{
     position: fixed;
 }
 nav li{
     padding: var(--paddingbouton);
-    margin: var(--space-xs) 0;
-    background-color:var(--color-gris_clair);
-    color: var(--color-gris_souris);
+    margin: var(--space-sm) 0;
     border-radius: 4px;
+    position: relative;
+}
+nav li:hover a{
+    color: var(--color-bleu_canard);
+}
+
+nav li:hover :before{
+    content:"";
+    display: block;
+    width: 5px;
+    height: 18px;
+    background-color: var(--color-bleu_vert);
+    border-radius: 1px;
+    position: absolute;
+    top: 7px;
+    left: -8px;
+}
+nav li.logo a:before{
+    display: none;
+}
+nav li a{
+    color:var(--color-bleu);
+    font-weight: var(--font-style-normal);
+}
+nav li.logo{
+    padding: 0;
+}
+nav .logo img{
+    width: 45%;
 }
 
 .en-tete{
@@ -186,6 +214,21 @@ h3 {
     padding-top: 12px;
     padding-bottom: 6px;
 
+}
+.creators{
+    position: absolute;
+    right: 14%;
+    top: 25px;
+    font-weight: var(--font-style-semimedium);
+    font-family: var(--font-family-ubuntu);
+    color: var(--color-violet);
+}
+.chapeau{
+    width:800px;
+    font-size: 24px;
+    font-family: var(--font-family-sourcesanspro);
+    line-height: 38px;
+    padding: 10px 0;
 }
 
 .size {
