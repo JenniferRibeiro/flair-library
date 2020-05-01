@@ -114,6 +114,9 @@ button{
     /*--BORDER--*/
     --border-radius-bouton: 47px;
 }
+.p-16-g{
+    padding: 16px;
+}
 .p-10-rl{
     padding: 0 10px;
 }
@@ -140,6 +143,9 @@ button{
 }
 .w-100{
     width: 100px;
+}
+.w-500{
+    width: 500px;
 }
 
 main{
@@ -221,7 +227,7 @@ h3 {
     top: 25px;
     font-weight: var(--font-style-semimedium);
     font-family: var(--font-family-ubuntu);
-    color: var(--color-violet);
+    color: var(--color-bleu);
 }
 .chapeau{
     width:800px;
@@ -333,6 +339,10 @@ h3 {
 .vert_sapin {
     background-color: var(--color-vert_sapin);
 }
+.fond-gris{
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
 
 
 
@@ -403,6 +413,7 @@ section{
     font-weight: var(--font-style-normal);
     font-size: var(--font-size-16);
     color: var(--color-gris_souris);
+    line-height: 20px;
 }
 
 .texte_complémentaire {
