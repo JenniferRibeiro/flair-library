@@ -107,6 +107,7 @@ button{
     --space-xs:8px;
     --space-sm:16px;
     --space-md:32px;
+    --space-l:42px;
 
     /*--PADDING--*/
     --paddingbouton: 8px 16px 8px 16px; 
@@ -160,6 +161,7 @@ nav{
 }
 nav ul{
     position: fixed;
+    width:12%;
 }
 nav li{
     padding: var(--paddingbouton);
@@ -193,11 +195,16 @@ nav li.logo{
     padding: 0;
 }
 nav .logo img{
-    width: 45%;
+    width: 100%;
 }
 
 .en-tete{
     padding: var(--space-md) 0;
+}
+hr{
+    height: 3px;
+    background-color: var(--color-bleu);
+    border-radius: 2px;
 }
 
 h1 {
