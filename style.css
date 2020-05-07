@@ -315,7 +315,7 @@ h3 {
 }
 
 p {
-    margin: auto;
+    padding-left: 8px;
     padding-bottom: 3px;
     padding-top: 0px;
 }
