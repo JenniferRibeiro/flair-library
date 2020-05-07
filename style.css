@@ -79,6 +79,7 @@ button{
     --color-bleu_ciel: #E4FBFE;
     --color-bleu_lien: #2D9CDB;
     --color-vert: #0BB38B;
+    --color-vert_clair: #48C6A8;
     --color-vert_menthe: #C2ECE2;
     --color-vert_sapin: #219653;
 
@@ -99,6 +100,7 @@ button{
     --font-size-16: 16px;
     --font-size-14: 14px;
     --font-style-normal: 400;
+    --font-style-semimedium: 500;
     --font-style-medium: 600;
     --font-style-bold: 700;
     
@@ -106,12 +108,16 @@ button{
     --space-xs:8px;
     --space-sm:16px;
     --space-md:32px;
+    --space-l:42px;
 
     /*--PADDING--*/
     --paddingbouton: 8px 16px 8px 16px; 
 
     /*--BORDER--*/
     --border-radius-bouton: 47px;
+}
+.p-16-g{
+    padding: 16px;
 }
 .p-10-rl{
     padding: 0 10px;
@@ -140,6 +146,17 @@ button{
 .w-100{
     width: 100px;
 }
+.w-500{
+    width: 500px;
+}
+.round{
+    border-radius: 50%;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 main{
     padding: 80px;
@@ -149,43 +166,91 @@ main{
 }
 nav{
     width: 12%;
-    padding: 40px;
+    padding: 20px 40px;
 }
 nav ul{
     position: fixed;
+    width:12%;
 }
 nav li{
     padding: var(--paddingbouton);
-    margin: var(--space-xs) 0;
-    background-color:var(--color-gris_clair);
-    color: var(--color-gris_souris);
+    margin: var(--space-sm) 0;
     border-radius: 4px;
+    position: relative;
+}
+nav li:hover a{
+    color: var(--color-bleu_canard);
+}
+
+nav li:hover :before{
+    content:"";
+    display: block;
+    width: 5px;
+    height: 18px;
+    background-color: var(--color-bleu_vert);
+    border-radius: 1px;
+    position: absolute;
+    top: 7px;
+    left: -8px;
+}
+nav li.logo a:before{
+    display: none;
+}
+nav li a{
+    color:var(--color-bleu);
+    font-weight: var(--font-style-normal);
+}
+nav li.logo{
+    padding: 0;
+}
+nav .logo img{
+    width: 100%;
 }
 
 .en-tete{
     padding: var(--space-md) 0;
 }
+hr{
+    height: 3px;
+    background-color: var(--color-bleu);
+    border-radius: 2px;
+}
 
 h1 {
-    font-family: var(--font-family-sourcesanspro);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-style-medium);
     font-size: var(--font-size-40);
-    font-style: var(--font-style-normal);
 }
 
 h2 {
-    font-style: var(--color-noir);
-    font-family: var(--font-family-sourcesanspro);
-    font-size: var(--font-size-30);
-    font-style: var(--font-style-bold);
+    font-family: var(--font-family-ubuntu);
+    font-weight: var(--font-style-normal);
+    font-size: var(--font-size-36);
+    color: var(--color-lavande);
 }
 
 h3 {
-    font-family: var(--font-family-sourcesanspro);
-    font-size: var(--font-size-30);
-    font-style: var(--font-style-bold);
+    font-weight: var(--font-style-normal);
+    font-size: var(--font-size-18);
+    color: var(--color-violet);
     padding-top: 12px;
     padding-bottom: 6px;
 
+}
+.creators{
+    position: absolute;
+    right: 14%;
+    top: 25px;
+    font-weight: var(--font-style-semimedium);
+    font-family: var(--font-family-ubuntu);
+    color: var(--color-bleu);
+}
+.chapeau{
+    width:800px;
+    font-size: 24px;
+    font-family: var(--font-family-sourcesanspro);
+    line-height: 38px;
+    padding: 10px 0;
 }
 
 .size {
@@ -216,6 +281,19 @@ h3 {
 
 .box-2cols li {
     margin-bottom: 20px;
+}
+
+#organisme {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-vert_clair);
+    border-radius: 18px;
+    text-align: center;
+    margin-right: 24px;
+}
+
+#organisme>img {
+    vertical-align: middle;
 }
 
 /*---------------------------------------COLORS-----------------------------*/
@@ -287,8 +365,16 @@ h3 {
     background-color: var(--color-vert_menthe);
 }
 
+.vert_clair {
+    background-color: var(--color-vert_clair);
+}
+
 .vert_sapin {
     background-color: var(--color-vert_sapin);
+}
+.fond-gris{
+    background-color: #f7f7f7;
+    border-radius: 4px;
 }
 
 
@@ -315,9 +401,9 @@ h3 {
 }
 
 p {
-    padding-left: 8px;
     padding-bottom: 3px;
     padding-top: 0px;
+    padding-left: 8px;
 }
 section{
     padding: 32px 0;
@@ -360,6 +446,7 @@ section{
     font-weight: var(--font-style-normal);
     font-size: var(--font-size-16);
     color: var(--color-gris_souris);
+    line-height: 20px;
 }
 
 .texte_complémentaire {
@@ -499,4 +586,13 @@ section{
     top: 32px;
 }
 
-
+/* ------------------ TEMPLATE -----------------------*/
+.screen{
+    width: 375px;
+    height: 812px;
+    box-shadow:0px 6px 8px rgba(var(--color-shadow-secondary),0.5);
+    position: relative;
+}
+.screen img{
+    width: 32%;
+}
